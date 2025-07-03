@@ -1,11 +1,18 @@
-import { useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
-function App() {
+function App() { // function
+  //1. Javascript
   const [count, setCount] = useState(0)
+  console.log("Remdered "+ count + "times")
+  //2. React Hooks
 
+  //3. JSX return()
+
+  //practice remove later
+  const list=['Alex','Stivers']
   return (
     <>
       <div>
@@ -16,7 +23,10 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>Vite + React</h1>
+      <h1>My Portfolio</h1>
+      <p>Hello World!</p>
+      {/* Practice, Remove Later */}
+      <p>{list}</p>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
